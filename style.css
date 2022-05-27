@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/bg-pattern-bottom-mobile.svg);
+  background-size: 100% 100%;
+  font-family: "League Spartan";
+
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+}
+h1,
+p {
+  color: hsl(300, 43%, 22%);
+}
+article {
+  background-color: hsl(300, 43%, 22%);
+}
+article p {
+  color: white;
+}
+
+article p > span {
+  color: hsl(333, 80%, 67%);
+}
+
+.rate {
+  background-color: hsl(300, 24%, 96%);
+}
+i {
+  color: rgb(255, 170, 0);
+}
+img {
+  border-radius: 50%;
+}
+
+/* MODIFICATIONS */
+header h1,
+header p {
+  text-align: center;
+  padding-inline: 50px;
+}
+
+header h1 {
+  margin: 30px 20px 20px;
+  font-size: 45px;
+}
+header p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+
+.rate {
+  height: 80px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column;
+  width: 90vw;
+  border-radius: 10px;
+}
+.stars i {
+  margin: 15px 3px;
+}
+
+.rate p {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+article {
+  border-radius: 10px;
+  padding: 35px;
+  margin: 15px;
+}
+
+article img {
+  height: 50px;
+}
+article p:nth-of-type(1) {
+  font-size: 18px;
+  font-weight: bold;
+  transform: translateY(-11px);
+  margin-left: 15px;
+  line-height: 1.2;
+  display: inline-block;
+}
+article p:nth-of-type(1) span {
+  font-weight: normal;
+}
+
+article p:nth-of-type(2) {
+  line-height: 1.3;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 580px) {
+  body {
+    flex-flow: row wrap;
+    padding: 50px;
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    background-size: 100% 100%;
+  }
+  header {
+    width: 45vw;
+    min-width: 500px;
+  }
+  header h1,
+  header p {
+    text-align: left;
+    margin-inline: 0;
+  }
+  header h1 {
+    font-size: 60px;
+  }
+  header p {
+    width: 80%;
+    min-width: 500px;
+  }
+  aside {
+    width: 45vw;
+    min-width: 550px;
+  }
+  aside .rate {
+    width: 80%;
+    height: 70px;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding-left: 30px;
+    margin-block: 15px;
+  }
+  aside .rate:nth-child(2) {
+    margin-left: 50px;
+  }
+  aside .rate:nth-child(3) {
+    margin-left: 100px;
+  }
+
+  aside .rate p {
+    margin-bottom: initial;
+    margin-left: 20px;
+  }
+
+  section {
+    margin-top: 45px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  section article {
+    width: 330px;
+    height: 260px;
+  }
+  section article:nth-child(2) {
+    margin-top: 40px;
+  }
+  section article:nth-child(3) {
+    margin-top: 70px;
+  }
+}
